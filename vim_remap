@@ -1,0 +1,15 @@
+
+nnoremap j gj
+nnoremap k gk
+
+nnoremap <leader>h :noh<CR>
+nnoremap <leader>; $a;<esc>
+inoremap <c-o> <esc>$a;
+nnoremap <leader>, $a,<esc>
+inoremap <c-l> <esc>$a,
+
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
+nmap <leader>b <Plug>(coc-definition)
+nmap <silent> <F4> <Plug>(coc-diagnostic-next)
+nmap <silent> <F3> <Plug>(coc-diagnostic-prev)
