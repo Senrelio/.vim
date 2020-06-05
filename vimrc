@@ -34,4 +34,3 @@ set foldmethod=indent
 source ~/.vim/extension_setting
 source ~/.vim/colorscheme
 source ~/.vim/vim_remap
-
