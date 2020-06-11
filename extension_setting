@@ -1,4 +1,3 @@
-
 call plug#begin('~/.vim/plugged')
 
 Plug 'tpope/vim-repeat'
@@ -6,6 +5,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim', {'as':'dracula'}
+Plug 'gruvbox-community/gruvbox'
 
 call plug#end()
 
@@ -24,3 +24,8 @@ endfunction
 
 let g:coc_snippet_next = '<c-j>'
 let g:coc_snippet_prev = '<c-k>'
+
+nmap <leader>gd <Plug>(coc-definition)
+nmap <leader>gf <Plug>(coc-references)
+nmap <silent> <F4> <Plug>(coc-diagnostic-next)
+nmap <silent> <F3> <Plug>(coc-diagnostic-prev)

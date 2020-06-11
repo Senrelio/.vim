@@ -10,6 +10,10 @@ set softtabstop=4
 set shiftwidth=4
 set smartindent
 set expandtab
+set nowrap
+set noswapfile
+set undodir=~/.vim/undodir
+set undofile
 
 set number
 set relativenumber
@@ -30,6 +34,7 @@ set foldenable
 set foldlevelstart=10
 set foldnestmax=10
 set foldmethod=indent
+set background=dark
 
 source ~/.vim/extension_setting
 source ~/.vim/colorscheme

@@ -1,8 +1,7 @@
-
 nnoremap j gj
 nnoremap k gk
 
-nnoremap <leader>h :noh<CR>
+nnoremap <leader>nh :noh<CR>
 nnoremap <leader>; $a;<esc>
 inoremap <c-o> <esc>$a;
 nnoremap <leader>, $a,<esc>
@@ -10,6 +9,11 @@ inoremap <c-l> <esc>$a,
 
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-nmap <leader>b <Plug>(coc-definition)
-nmap <silent> <F4> <Plug>(coc-diagnostic-next)
-nmap <silent> <F3> <Plug>(coc-diagnostic-prev)
+nnoremap <leader>sv :wincmd v<bar> :Ex <bar> :vertical resize 30<cr>
+nnoremap <leader>h :wincmd h<cr>
+nnoremap <leader>j :wincmd j<cr>
+nnoremap <leader>k :wincmd k<cr>
+nnoremap <leader>l :wincmd l<cr>
+
+nnoremap <leader>` :split<cr> :wincmd j<cr> :terminal<cr> :resize -10<cr>
+tnoremap <esc> <c-\><c-n>
