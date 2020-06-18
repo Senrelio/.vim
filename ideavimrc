@@ -1,0 +1,6 @@
+let mapleader=" "
+nnoremap <leader>f :action ReformatCode<CR>
+nnoremap <leader>g :action Back<CR>
+
+set surround
+set commentary

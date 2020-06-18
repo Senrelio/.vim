@@ -6,6 +6,8 @@ Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dracula/vim', {'as':'dracula'}
 Plug 'gruvbox-community/gruvbox'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -29,3 +31,5 @@ nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gf <Plug>(coc-references)
 nmap <silent> <F4> <Plug>(coc-diagnostic-next)
 nmap <silent> <F3> <Plug>(coc-diagnostic-prev)
+nnoremap <leader>go :GFiles<CR>
+nnoremap <leader>fo :Files<CR>

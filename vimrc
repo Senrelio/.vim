@@ -1,6 +1,6 @@
 set path+=**
 
-let mapleader=' '
+let mapleader=" "
 
 syntax enable
 
@@ -14,6 +14,7 @@ set nowrap
 set noswapfile
 set undodir=~/.vim/undodir
 set undofile
+set backspace=indent,eol,start
 
 set number
 set relativenumber
@@ -36,6 +37,4 @@ set foldnestmax=10
 set foldmethod=indent
 set background=dark
 
-source ~/.vim/extension_setting
-source ~/.vim/colorscheme
 source ~/.vim/vim_remap
