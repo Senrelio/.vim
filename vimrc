@@ -37,4 +37,7 @@ set foldnestmax=10
 set foldmethod=indent
 set background=dark
 
+set nrformats=alpha
+
 source ~/.vim/vim_remap
+

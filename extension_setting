@@ -4,10 +4,12 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'dracula/vim', {'as':'dracula'}
 Plug 'gruvbox-community/gruvbox'
+Plug 'dracule/vim', {'as':'dracula'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'qpkorr/vim-renamer'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
