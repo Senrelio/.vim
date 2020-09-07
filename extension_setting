@@ -5,7 +5,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'gruvbox-community/gruvbox'
-Plug 'dracule/vim', {'as':'dracula'}
+Plug 'dracula/vim', {'as':'dracula'}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'qpkorr/vim-renamer'
@@ -31,7 +31,8 @@ let g:coc_snippet_prev = '<c-k>'
 
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gf <Plug>(coc-references)
+nmap <silent> <F2> <Plug>(coc-rename)
+nmap <silent> <F1> <Plug>(coc-fix-current)
 nmap <silent> <F4> <Plug>(coc-diagnostic-next)
 nmap <silent> <F3> <Plug>(coc-diagnostic-prev)
-nnoremap <leader>go :GFiles<CR>
-nnoremap <leader>fo :Files<CR>
+nnoremap <leader>gg :GFiles<CR>

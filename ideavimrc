@@ -1,6 +1,12 @@
 let mapleader=" "
 nnoremap <leader>f :action ReformatCode<CR>
 nnoremap <leader>g :action Back<CR>
+nnoremap <leader>o :action GotoFile<CR>
+nnoremap <F3> :action GotoPreviousError<CR>
+nnoremap <F4> :action GotoNextError<CR>
+nnoremap <F2> :action RenameElement<CR>
+nnoremap <silent> gi :action GotoImplementation<CR>
+nnoremap <silent> gs :action GotoSuperMethod<CR>
 
 set surround
 set commentary

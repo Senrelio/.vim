@@ -2,6 +2,8 @@ set path+=**
 
 let mapleader=" "
 
+set guifont=SF\ Mono:h15
+
 syntax enable
 
 set tabstop=4
